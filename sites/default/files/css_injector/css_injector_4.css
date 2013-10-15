@@ -1,0 +1,30 @@
+/* Hiding Forum collapsable superheader */
+.forum-table-superheader {
+    display: none;
+}
+
+.forum-table tr.even, .forum-table tr.odd {
+    background: none;
+}
+
+.forum-table thead tr a, .forum-table thead tr a:visited, .forum-table thead tr a:link, #forum thead th a {
+    color: #333;
+}
+
+#forum thead th, .forum-table thead th {
+    background: #ede6d3;
+    color: #333;
+    text-shadow: 1px 0 1px #d2c5a9;
+}
+
+#forum thead th, .forum-table thead th a {
+    color: #333;
+}
+
+.forum-pager {
+    margin-bottom: 2em;
+}
+
+#forum-pager-top {
+    display: none;
+}

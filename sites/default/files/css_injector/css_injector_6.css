@@ -1,0 +1,349 @@
+a {
+    color: #147fba;
+}
+
+a:hover, a:active, a:focus {
+    color: #147fba;
+}
+
+.tb-megamenu .nav > li > a {
+    padding: 10px 20px;
+}
+
+.tb-megamenu .span12.mega-col-nav .mega-inner {
+    padding: 10px 20px 5px 20px;
+}
+
+#block-system-main .block-inner {
+    border: none;
+}
+
+#page-title {
+    height: 65px;
+    padding: 10px 0 0 50px;
+    box-shadow: none;
+}
+
+#page-title span {
+    background: #85B233;
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.36em;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 0.9em;
+}
+
+#header #search-block-form {
+    background: none;
+    width: 210px;
+    float: right;
+    border-left: 2px solid #e4dbc7;
+    padding: 0 0 0 40px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+#search-block-form .form-submit {
+    height: 24px;
+    width:24px;
+}
+
+#header #search-block-form span.button {
+    margin-left: 5px;
+}
+
+#search-block-form span.button {
+    background: #3273a1 url(/sites/all/themes/tb_sirate/images/ico-search.png) no-repeat center center;
+    border: none;
+    width: 24px;
+}
+
+#search-block-form .form-text {
+    border: 1px solid #c2c2c2;
+    line-height: 20px;
+    height: 24px;
+    width: 169px;
+}
+
+#breadcrumb-wrapper .container {
+    padding-bottom: 0;
+}
+
+.breadcrumb {
+    padding-top: 7px;
+}
+
+.breadcrumb span.inline {
+    padding: 0 2px;
+}
+
+.breadcrumb span.inline a {
+    color: #0e5d89;
+}
+
+#tagline {
+    text-align: right;
+    font-weight: bold;
+    color: #888580;
+    font-size: 1.15em;
+    margin-top: 30px;
+    font-family: Belgrano, serif;
+}
+
+#tagline .blue {
+     color: #147fba;
+}
+
+#tagline .yellow {
+     color: #DFB02E;
+}
+
+#tagline .green {
+     color: #85B233;
+}
+
+.cke_wysiwyg_frame > html {
+    font-size: 100%;
+}
+
+.article .menu ul.links li a:hover, .article .menu ul.links li a:focus, .article .menu ul.links li.comment_forbidden a:hover, span.button input.form-submit:hover {
+    background: #96c644;
+    background-url: none;
+    border: none;
+    color: white;
+}
+
+.article .menu ul.links li a, span.button input.form-submit {
+    font-family: Belgrano, serif;
+    padding: 3px 10px 4px 10px;
+    text-transform: none;
+    font-size: 1em;
+    background: #87b33b;
+    background-url: none;
+    border: none;
+    margin-right: 2px; 
+    color: white;
+}
+
+#comments > h2 {
+    padding: 0.8em 1em;
+}
+.node-title {
+    font-size: 2.2em;
+}
+
+.marker, .form-required {
+    color: #85B233;
+}
+
+/* Login box */
+
+#dropdown-login.enable-dd .button span span {
+    padding: 0 15px 0 0;
+}
+
+#login-block {
+    float: right;
+    margin-right: 45px;
+}
+
+.block-user .block-inner {
+    border-color: #3e98ca;
+}
+
+.dark-gray-color .block-inner {
+    background: #add3ed;
+}
+
+.dark-gray-color .block-title {
+    color: #fff;
+}
+
+.block-user .block-content {
+    background: #3e98ca;
+    border: 1px solid #2f6f9d;
+}
+
+#user-login-form .form-item-name input, #user-login-form .form-item-openid-identifier input, #user-login-form .form-item-pass input {
+    background: white;
+    border: 1px solid #2f6f9d;
+    color: #2f6f9d;
+}
+
+#user-login-form .item-list li a:hover, #user-login-form .item-list li a:focus {
+color: #add3ed;
+}
+
+.block-user .form-item label {
+    color: white;
+}
+
+#user-login-form .item-list li a {
+    color: white;
+}
+
+#user-login-form input.form-submit {
+    border: 1px solid #0e5d89;
+    color: white;
+}
+
+#user-login-form input.form-submit:hover {
+    border: 1px solid #0e5d89;
+}
+
+#header {
+    height: auto;
+    padding: 15px 0 0;
+}
+
+.wrapper .container {
+    background: white;
+}
+
+.block ul.menu li li a {
+    background-image: url(/sites/all/themes/tb_sirate/images/plus.png);
+}
+
+.block ul.menu li.open a {
+    background: url(/sites/all/themes/tb_sirate/images/minus.png) no-repeat 1.1em center;
+}
+
+.block ul.menu li.open li a {
+    background-image: url(/sites/all/themes/tb_sirate/images/minus.png);
+}
+
+.cke_editable {
+    font-size: 12pt;
+}
+
+/* Forum */
+.forum-node-create-links {
+    width: 100%;
+}
+
+#main-content .block-inner {
+    padding-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 959px) {
+    #forum .views-field img, .field-type-image img {
+        height: auto;
+        width: auto;
+    }
+}
+
+/* End of Forum */
+
+.article ul.links li a {
+    background: #87B33B;
+    margin-right: 5px;
+}
+
+.article ul.links li a:hover, .article ul.links li a:active, .article ul.links li a:focus {
+    background: #96C644;
+}
+
+/* footer */
+#footer {
+    padding: 1em 3em 1.8em 3em;
+}
+
+#footer-wrapper > .container {
+    background: #2f6f9d;
+    border-top: none;
+}
+
+#copyright {
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    float: left;
+}
+
+#footer ul.menu li a {
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#footer ul.menu li.first a {
+    padding-left: 0;
+}
+
+#footer ul.menu li a.active {
+    background: #2f6f9d;
+    color: #7BB9E0;
+}
+
+#footer ul.menu li {
+    border-right: 1px solid #4DA1D1;
+}
+
+#footer ul.menu li.last {
+    border-right: none;
+}
+
+#footer ul.menu {
+    clear: both;
+    margin-top: -20px;
+}
+
+#footer-logos {
+    height: 80px;
+    width: 40%;
+    float: right;
+    position: relative;
+}
+
+#fhi360-logo {
+    position: absolute;
+    right: 0;
+    width: 169px;
+}
+
+#ukaid-logo {
+    position: absolute;
+    right: 50%;
+    margin: 2px 20px;
+}
+
+#rwanda-emblem {
+    position: absolute;
+    left: 0;
+    margin-right: 10px;
+}
+
+/*User Profiles*/
+.profile h3 {
+    border-bottom: none;
+    margin: 0 0 1em;
+    padding: 0 0 .5em 0;
+}
+/*End of User Profiles*/
+
+@media screen and (max-width: 959px) {
+    #footer-logos {
+        width: 100%;
+        float: none;
+    }
+   
+    #copyright {
+        float: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #footer ul.menu {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 720px) {
+    #header #search-block-form {
+        display: block;
+    }
+}

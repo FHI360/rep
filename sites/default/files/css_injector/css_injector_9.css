@@ -1,0 +1,173 @@
+.sidebar .block-inner {
+    background: none;
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+}
+
+.sidebar #block-views-news-list-block-2--2, .sidebar #block-views-sms-tips-block-1--2 {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.view-news-list .views-row {
+    padding: 7px 3px;
+    background: none;
+    clear: both;
+}
+
+.view-news-list .views-row.views-row-first {
+    padding-top: 0;
+}
+
+.view-news-list .views-row .views-field-title {
+    width: 100%;
+    display: block
+}
+
+.view-news-list .views-row .views-field-created {
+    display: block;
+}
+
+.view-news-list .views-row .views-field-title a {
+   line-height: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #3399cc
+}
+
+#block-views-news-list-block-2--2 .block-inner {
+    margin-bottom: 25px;
+}
+
+#block-views-sms-tips-block--2, #block-views-sms-tips-block-1--2 {
+    padding: 20px 20px 40px 20px;
+    overflow: hidden;
+    height: 240px;
+    background: #147FBA;
+    background-image: -ms-linear-gradient(top, #147FBA 0%, #4EA2D1 100%);
+    background-image: -moz-linear-gradient(top, #147FBA 0%, #4EA2D1 100%);
+    background-image: -o-linear-gradient(top, #147FBA 0%, #4EA2D1 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #147FBA), color-stop(1, #4EA2D1));
+    background-image: -webkit-linear-gradient(top, #147FBA 0%, #4EA2D1 100%);
+    background-image: linear-gradient(to bottom, #147FBA 0%, #4EA2D1 100%);
+    border: 1px solid #e2e2e2;
+}
+
+#block-views-news-list-block-1--2, #block-views-news-list-block-2--2 {
+    padding: 20px;
+    overflow: hidden;
+    height: 240px;
+    background: #F1EDE1;
+    background-image: -ms-linear-gradient(bottom, #F4F2EC 0%, #F1EDE1 100%);
+    background-image: -moz-linear-gradient(bottom, #F4F2EC 0%, #F1EDE1 100%);
+    background-image: -o-linear-gradient(bottom, #F4F2EC 0%, #F1EDE1 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F4F2EC), color-stop(1, #F1EDE1));
+    background-image: -webkit-linear-gradient(bottom, #F4F2EC 0%, #F1EDE1 100%);
+    background-image: linear-gradient(to top, #F4F2EC 0%, #F1EDE1 100%);
+    border: 1px solid #e2e2e2;
+}
+
+#block-views-sms-tips-block--2 h2, #block-views-sms-tips-block-1--2 h2 {
+    color: white;
+    margin-bottom: 0;
+    background: url(../../../default/files/theme/img/sms_tip.png) no-repeat 0 center;
+    text-indent: 40px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px; 
+    letter-spacing: 0.07em; 
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+#block-views-news-list-block-1--2 h2, #block-views-news-list-block-2--2 h2, .mass-bottom .grid-inner h2 {
+    padding: 0 0 15px 20px;
+    margin: 0 -20px 1em -20px;
+    border-bottom: 1px white solid;
+    color: #85B233;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px; 
+    letter-spacing: 0.07em; 
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+#block-views-sms-tips-block-1--2 .view-sms-tips {
+    margin-left: 40px;
+    position: relative;
+    margin-left: 40px;
+}
+
+#block-views-sms-tips-block-1--2 .view-sms-tips .view-footer {
+    bottom: -30px;
+    position: absolute;
+    right: 0;
+}
+
+#block-views-sms-tips-block--2 .view-sms-tips .views-field-title, #block-views-sms-tips-block--2 .view-sms-tips .views-field-body, #block-views-sms-tips-block-1--2 .view-sms-tips .views-field-title, #block-views-sms-tips-block-1--2 .view-sms-tips .views-field-body {
+    font-family: Belgrano, serif; 
+    font-size: 16px; 
+    letter-spacing: -0.03em;
+    color: #a9dffd;
+}
+
+#block-views-sms-tips-block--2 .more-link {
+    margin-top: 35px;
+}
+
+.not-ie #block-views-news-list-block-1--2 .more-link {
+    margin-left: 25px;
+    text-align: left;
+}
+
+#block-views-sms-tips-block--2 .more-link a,    #block-views-sms-tips-block-1--2 .more-link a {
+    font-weight: bold;
+    background: #F1EDE1;
+    color: #85B233;
+    text-decoration: none;
+    padding: 2px 5px;
+    border: 1px solid;
+}
+
+#block-views-news-list-block-1--2 .more-link a, #block-views-news-list-block-2--2 .more-link a {
+    text-decoration: none;
+    color: #3399cc;
+    font-weight: bold;
+}
+
+#block-views-sms-tips-block--2 .more-link a:hover, #block-views-sms-tips-block--2 .more-link a:active, #block-views-sms-tips-block--2 .more-link a:focus, #block-views-sms-tips-block-1--2 .more-link a:hover, #block-views-sms-tips-block-1--2 .more-link a:active, #block-views-sms-tips-block-1--2 .more-link a:focus {
+    background: white;
+}
+
+ #block-views-news-list-block-1--2 .more-link a:hover, #block-views-news-list-block-1--2 .more-link a:active, #block-views-news-list-block-1--2 .more-link a:focus, #block-views-news-list-block-2--2 .more-link a:hover, #block-views-news-list-block-2--2 .more-link a:active, #block-views-news-list-block-2--2 .more-link a:focus {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 959px) and (min-width: 720px) {
+    #sidebar-first-wrapper .grid-inner {
+        background: none;
+        border: none;
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    #sidebar-first-wrapper .region > .block {
+        display: block;
+        float: none;
+        padding-top: 20px;
+        margin-top: 0;
+        vertical-align: top;
+        width: auto;
+    }
+ 
+    #block-views-sms-tips-block-1--2 .view-sms-tips {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    #block-views-sms-tips-block-1--2 .view-sms-tips {
+        height: 120px;
+    }
+}

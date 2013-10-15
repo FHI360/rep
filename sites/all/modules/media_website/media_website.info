@@ -1,0 +1,6 @@
+name = Media Website
+description = "Adds a Website file type to Media module"
+dependencies[] = field
+package = Media
+core = 7.x
+version = "7.x-0.3"

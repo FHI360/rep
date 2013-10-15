@@ -1,0 +1,67 @@
+/***************************************************************
+** Dropdown Login Stylesheet
+****************************************************************/
+
+#login-block {
+    margin-top: 15px; 
+}
+
+form#user-login {
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-login {
+    position: relative;
+    float: right;
+}
+
+#dropdown-login .button {
+    display: block;
+}
+
+#dropdown-login .button span {
+    display: block;
+}
+
+#my-account, #logout, #create-account {
+    position: relative;
+    float: right;
+    padding: 2px 0px;
+}
+
+#dropdown-login.enable-dd .button span span {
+    background: url('images/arrow.png') 100% 50% no-repeat;
+    padding: 0 10px 0 0;
+}
+
+#dropdown-login.enable-dd .active span span {
+    background: url('images/arrow-up.png') 100% 50% no-repeat;
+}
+
+#dropdown-login .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    padding: 10px 15px;
+    background: #fff;
+    border: #ddd 1px solid;
+    left: 0;
+    top: 25px;
+    box-shadow: 1px 1px 6px #8d8d8d;    
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#dropdown-login .dropdown input.form-text {
+    width: 188px;
+}
+
+#dropdown-login .reset-password {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 90px;
+}

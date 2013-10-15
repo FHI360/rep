@@ -1,0 +1,18 @@
+.article.node-teaser .field-name-body {
+    width: auto;
+    overflow: hidden;
+}
+
+.article.node-teaser  .field-type-image {
+    margin: 1em 1em 0 0;
+    width: 100px;
+    float: left;
+}
+
+.article.node-full .field-type-image {
+    width: 220px;
+}
+
+.article .menu {
+    clear: both;
+}

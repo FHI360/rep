@@ -1,0 +1,94 @@
+<?php
+
+// $Id$
+
+/**
+ * @file
+ * Dropdown Login
+ */
+
+/**
+ * Implementation of hook_init
+ */
+
+function dropdown_login_init() {
+  drupal_add_css(drupal_get_path('module', 'dropdown_login') . '/theme/dropdown_login.css');
+  drupal_add_js(drupal_get_path('module', 'dropdown_login') . '/theme/dropdown_login.js');
+}
+
+/**
+ * Implementation of hook_block
+ */
+
+function dropdown_login_block_info() {
+  $blocks['login_dropdown'] = array(
+    'info' => t('Dropdown Login'),
+  );
+  return $blocks;
+}
+
+function dropdown_login_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'login_dropdown':
+      $items = array();
+      $block['content'] = get_dropdown();
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Function for dropdown
+ */
+function get_dropdown() {
+  // Call global user object
+  global $user;
+
+  // Values for if user is logged out
+  $output = '<div id="login-block">';
+  if ($user->uid == 0):
+    $linktext = '<span>Create Account</span>';
+    $link = 'user/register';
+    $linkclass = 'my-account';
+    $output .= '<div id="create-account">';
+    $output .= l($linktext, $link, array('attributes' => array('class' => array($linkclass)), 'html' => TRUE));
+    $output .= '</div>';
+
+    $linktext = '<span><span id="login-link-container">Login</span></span>';
+    $link = 'user';
+    $linkclass = 'login';
+    $output .= '<div id="dropdown-login">';
+    $output .= l($linktext, $link, array('attributes' => array('class' => array($linkclass, 'button')), 'html' => TRUE));
+
+    $form = drupal_get_form('user_login');
+    $linktext = '<span>Forgot password</span>';
+    $link = 'user/password';
+    $linkclass = 'reset-password';
+    $output .= '<div class="dropdown">';
+    $output .= render($form);
+    $output .= l($linktext, $link, array('attributes' => array('class' => array($linkclass)), 'html' => TRUE));
+    $output .= '</div>';
+    $output .= '</div>';
+
+  // Values for if user is logged in
+  else:
+    $linktext = '<span>Log out</span>';
+    $link = 'user/logout';
+    $linkclass = 'logout';
+    $output .= '<div id="logout">';
+    $output .= l($linktext, $link, array('attributes' => array('class' => array($linkclass)), 'html' => TRUE));
+    $output .= '</div>';
+
+    $linktext = '<span>My Account</span>';
+    $link = 'user';
+    $linkclass = 'my-account';
+    $output .= '<div id="my-account">';
+    $output .= l($linktext, $link, array('attributes' => array('class' => array($linkclass, 'button')), 'html' => TRUE));
+    $output .= '</div>';
+
+  endif;
+  $output .= '</div>';
+  return $output;
+}

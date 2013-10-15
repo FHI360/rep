@@ -1,0 +1,4 @@
+name = Dropdown Login
+description = "Creates a drop-down login form as a block. Automatically reverts to a link when js is not available"
+package = User interface
+core = 7.x

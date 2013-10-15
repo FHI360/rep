@@ -1,0 +1,74 @@
+/* Navigation menu design */
+
+.tb-megamenu .nav > li > a, .tb-megamenu .mega-nav > li:first-child > a, .tb-megamenu .dropdown-menu .mega-nav > li:first-child > a, .tb-megamenu .dropdown-menu .mega-nav > li > a {
+    background: none;
+    color: white;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 800;    
+    font-size: 0.9em;
+    border-top: none;
+}
+
+/* Removes padding defined in theme */
+#block-tb-megamenu-main-menu .block-inner {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#menu-bar-wrapper .container {
+    background: none;
+    padding-bottom: 0;
+}
+
+.tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus {
+    background-color: #147fba;
+    color: white;
+    font-weight: bold;
+}
+
+.tb-megamenu {
+    background-color: #3e98ca;
+    background-image: -moz-linear-gradient(top,#3e98ca,#5aa9d6);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#3e98ca),to(#5aa9d6));
+    background-image: -webkit-linear-gradient(top,#3e98ca,#5aa9d6);
+    background-image: -o-linear-gradient(top,#3e98ca,#5aa9d6);
+    background-image: linear-gradient(to bottom,#3e98ca,#5aa9d6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3e98ca', endColorstr='#ff5aa9d6', GradientType=0);
+    color: white;
+}
+
+.tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover {
+    background-color: #147fba;
+    color: white;
+}
+
+.tb-megamenu .nav-collapse .nav > li.active > a:hover, .tb-megamenu .nav-collapse .nav > li.active > a:focus {
+    color: white;
+    background-color: #147fba;
+}
+
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.active > .dropdown-toggle:hover, .tb-megamenu .nav li.dropdown.open.active a:hover {
+    background-color: #147fba;
+    color: white;
+}
+
+.tb-megamenu .dropdown-menu {
+    background-color: #3e98ca;
+}
+
+.tb-megamenu .dropdown-menu li > a {
+    color: white;
+}
+
+.tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus, .tb-megamenu .dropdown-submenu:hover > a {
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive menu */
+.responsive-menu-button {
+    top: 0;
+}

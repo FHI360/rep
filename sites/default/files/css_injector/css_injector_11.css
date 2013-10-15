@@ -1,0 +1,47 @@
+.document-entity {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d2c8b0;
+}
+
+.views-row-last {
+    border-bottom: none;
+}
+
+.document-title a {
+    font-family: Belgrano, serif;
+    font-size: 2em;
+    letter-spacing: -0.03em;
+    color: #333333;
+    line-height: 1.2em;
+}
+
+.document-title a:hover, .document-title a:focus, .document-title a:active {
+    text-decoration: none;
+    color: #147FBA;
+}
+
+.document-description {
+    margin-top: 10px;
+}
+
+.document-type {
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 18px;
+}
+
+.document-entity .Document {
+    background: url(../../../default/files/theme/img/document.png) no-repeat 0 center;
+}
+
+.document-entity .Video {
+    background: url(../../../default/files/theme/img/video.png) no-repeat 0 center;
+}
+
+.document-entity .Website {
+    background: url(../../../default/files/theme/img/world.png) no-repeat 0 center;
+}

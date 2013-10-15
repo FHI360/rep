@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * Implements hook_help().
+ *
+ * Describe the purpose and usage  of this module.
+ */
+function media_website_help($path, $arg) {
+  $helptext = '';
+  if ($path == 'admin/help#media_website') {
+    $helptext = '<p>';
+    $helptext .= t('This module provides a new format for the File field type and is desigend to work together with Media module.' .
+    ' This format presents the remote URL as a fully rendered object within an iframe on a web page.');
+    $helptext .= '</p>';
+    $helptext .= '<p>';
+    $helptext .= t('To use this field format, add a File field to a new or existing content type (such as Basic Page) on the content type\'s Manage Fields form.' .
+    ' The File field type provides only one widget type - File - so select that. On the content type\'s "Manage Display" form,' .
+    ' there will be a drop-down select list of available display formats for the File field. To display the URL within the embedded' .
+    ' iframe, choose the \'Embedded Website Viewer\' format.');
+    $helptext .= '</p>';
+    $helptext .= '<p>';
+    $helptext .= t('The website viewer may be styled using the CSS selector \'.media-website\'. By default, the viewer\'s width is 800px and its height is 400px.');
+    $helptext .= '</p>';
+  }
+  return $helptext;
+}
+
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ *
+ * Add a new formatter to the
+ * list of formatters available for the File field type.
+ */
+function media_website_field_formatter_info_alter(&$info) {
+  $new_formatter = array(
+    'label' => t('Embedded Website viewer'),
+    'field types' => array(0 => 'file'),
+    'settings' => array(),
+    'module' => 'media_website',
+  );
+  $info['media_website_embedded'] = $new_formatter;
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ *
+ * Renders the ouput of an
+ * 'Embedded Google Docs viewer' formatted field within an iframe that
+ * pulls in the Google Docs viewer to display the file inline.
+ *
+ */
+function media_website_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  switch ($display['type']) {
+    // This formatter outputs the field within an iframe.
+    case 'media_website_embedded':
+      foreach ($items as $delta => $item) {
+        $item_uri = $item['uri'];
+//        if (file_uri_scheme($item_uri) == 'public') {
+          $url = file_create_url($item_uri);
+          $encoded_url = urlencode($url);
+          drupal_add_css(drupal_get_path('module', 'media_website') . '/media_website.css');
+          $element[$delta]['#markup'] = '<iframe class="media-website" src="' . $item_uri . '"></iframe>';
+//        }
+//        else {
+//          drupal_set_message(t('The file (%file) is not publicly accessable. It must be publicly available in order for the Google Docs viewer to be able to access it.', array('%file' => $item['filename'])), 'error', FALSE);
+//        }
+      }
+      break;
+  }
+  return $element;
+}
+
+/**
+ * @file
+ * Media Webiste
+ */
+
+$type = new StdClass();
+$type->name = 'website';
+$type->label = "Website";
+$type->base = TRUE; // @todo what?
+$type->type_callback_args = array(
+    'match_type' => 'all', // @todo what?
+    'mimetypes' => array('/^text\/html/'),  // An array of regex patterns e.g. /^audio/
+    'extensions' => array(''), // An array of extensions
+    'streams' => array('private', 'public') // An array of streams @todo what?
+);
+
+$type = media_type_save($type);
+
