@@ -11,6 +11,8 @@
 
 .article.node-full .field-type-image {
     width: 220px;
+    margin-right: 15px;
+    float: left;
 }
 
 .article .menu {

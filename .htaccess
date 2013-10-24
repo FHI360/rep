@@ -140,11 +140,11 @@ DirectoryIndex index.php index.html index.htm
 
 
 
-#AuthUserFile /var/www/mcop/secret/.htpasswd
-#AuthGroupFile /dev/null
-#AuthName "The MCOP site is currently under development"
-#AuthType Basic
+AuthUserFile /var/www/rep/secret/.htpasswd
+AuthGroupFile /dev/null
+AuthName "The REP site is currently under development"
+AuthType Basic
 
-#<Limit GET>
-#require valid-user
-#</Limit>
+<Limit GET>
+require valid-user
+</Limit>

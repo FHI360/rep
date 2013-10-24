@@ -75,9 +75,9 @@
     text-indent: 40px;
     line-height: 50px;
     font-family: 'Open Sans', sans-serif; 
-    font-size: 18px; 
-    letter-spacing: 0.07em; 
-    text-transform: uppercase; 
+    font-size: 16px; 
+    letter-spacing: 0.06em; 
+    text-transform: capitalize; 
     font-weight: bold;
 }
 
@@ -87,8 +87,8 @@
     border-bottom: 1px white solid;
     color: #85B233;
     font-family: 'Open Sans', sans-serif; 
-    font-size: 18px; 
-    letter-spacing: 0.07em; 
+    font-size: 18px;
+    letter-spacing: 0.07em;
     text-transform: uppercase; 
     font-weight: bold;
 }
@@ -109,7 +109,7 @@
     font-family: Belgrano, serif; 
     font-size: 16px; 
     letter-spacing: -0.03em;
-    color: #a9dffd;
+    color: #CAECFF;
 }
 
 #block-views-sms-tips-block--2 .more-link {
@@ -142,6 +142,23 @@
 
  #block-views-news-list-block-1--2 .more-link a:hover, #block-views-news-list-block-1--2 .more-link a:active, #block-views-news-list-block-1--2 .more-link a:focus, #block-views-news-list-block-2--2 .more-link a:hover, #block-views-news-list-block-2--2 .more-link a:active, #block-views-news-list-block-2--2 .more-link a:focus {
     text-decoration: underline;
+}
+
+#block-views-news-list-block-2--2 .read-more {
+    text-align: right;
+}
+
+#block-views-news-list-block-2--2 .read-more a {
+    font-family: Belgrano;
+    background: #87B33B;
+    border: 1px solid;
+    padding: 3px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#block-views-news-list-block-2--2 .view-header {
+    margin: -55px 0px 30px;
 }
 
 @media screen and (max-width: 959px) and (min-width: 720px) {

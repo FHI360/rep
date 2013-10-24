@@ -101,7 +101,8 @@ function nucleus_feedback_form(&$form) {
   );
 
   $form['nucleus']['about_nucleus']['about_nucleus_wrapper']['about_nucleus_content'] = array(
-    '#markup' => '<iframe width="100%" height="650" scrolling="no" class="nucleus_frame" frameborder="0" src="http://themebrain.com/static/about/"></iframe>',
+    //'#markup' => '<iframe width="100%" height="650" scrolling="no" class="nucleus_frame" frameborder="0" src="http://themebrain.com/static/about/"></iframe>',
+    '#markup' => '<p>This page is not available.</p>',
   );
 }
 

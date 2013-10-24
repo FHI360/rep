@@ -6,6 +6,10 @@ a:hover, a:active, a:focus {
     color: #147fba;
 }
 
+.node-title a:hover, .node-title a:active, .node-title a:focus {
+    color: #147fba;
+}
+
 .tb-megamenu .nav > li > a {
     padding: 10px 20px;
 }
@@ -38,7 +42,6 @@ a:hover, a:active, a:focus {
     background: none;
     width: 210px;
     float: right;
-    border-left: 2px solid #e4dbc7;
     padding: 0 0 0 40px;
     margin-top: 12px;
     overflow: hidden;
@@ -260,7 +263,6 @@ color: #add3ed;
     font-weight: bold;
     font-size: 1em;
     letter-spacing: 0.1em;
-    float: left;
 }
 
 #footer ul.menu li a {
@@ -288,7 +290,7 @@ color: #add3ed;
 
 #footer ul.menu {
     clear: both;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 #footer-logos {
@@ -302,18 +304,6 @@ color: #add3ed;
     position: absolute;
     right: 0;
     width: 169px;
-}
-
-#ukaid-logo {
-    position: absolute;
-    right: 50%;
-    margin: 2px 20px;
-}
-
-#rwanda-emblem {
-    position: absolute;
-    left: 0;
-    margin-right: 10px;
 }
 
 /*User Profiles*/
