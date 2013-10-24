@@ -5,4 +5,5 @@ secret
 
 # Ignore paths that contain user-generated content.
 #sites/default/files
+sites/default/files/js
 #sites/*/private

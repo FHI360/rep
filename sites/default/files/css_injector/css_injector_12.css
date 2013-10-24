@@ -1,0 +1,32 @@
+#block-system-main .block-inner, #block-views-front-page-panels-block-1 .block-inner {
+    border: none;
+    padding-top: 0;
+}
+
+.view-front-page-panels .views-row {
+    margin-bottom: 1em;
+}
+
+.views-field-field-image {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+
+.views-field-field-image img {
+    border: 1px solid #e2e2e2;
+    padding: 3px;
+}
+
+.visit-site-link {
+    font-family: Open Sans, sans-serif;
+    color: #2F6F9D;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.views-field-field-title-styled, .views-field-title-1 {
+    font-family: Belgrano;
+    font-size: 2.2em;
+    margin: 0.5em 0;
+}
