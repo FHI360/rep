@@ -1,0 +1,31 @@
+.article {
+    margin-bottom: 0;
+}
+
+.contact-block {
+    width: 45%;
+    min-height: 185px;
+}
+
+.contact-block span {
+    font-weight: bold;
+}
+
+.contact-block.left {
+    margin-right: 10%;
+}
+
+.form-description {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 721px) {
+    .contact-block {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .contact-block.left {
+        margin-right: 0;
+    }
+}
