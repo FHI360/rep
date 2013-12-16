@@ -23,7 +23,7 @@ a:hover, a:active, a:focus {
 }
 
 #page-title {
-    height: 65px;
+    height: auto;
     padding: 10px 0 0 50px;
     box-shadow: none;
 }
@@ -291,6 +291,10 @@ color: #add3ed;
 #footer ul.menu {
     clear: both;
     margin-top: 20px;
+}
+
+#footer ul.menu li a:hover, #footer ul.menu li a:active, #footer ul.menu li a:focus {
+    color: #CAECFF;
 }
 
 #footer-logos {

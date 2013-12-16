@@ -36,6 +36,25 @@ function get_dropdown_login() {
   return $output;
 }
 
+function tb_sirate_menu_tree__main_menu($variables) {
+  if (preg_match("/\bexpanded\b/i", $variables['tree'])){
+    return '<ul id="main-menu-links" class="clearfix">' . $variables['tree'] . '</ul><a href="#" id="menu-toggle">Menu</a>';
+  } else {
+    return '<ul class="main-menu-sub-links clearfix">' . $variables['tree'] . '</ul>';
+  }
+
+}
+
+function tb_sirate_links($variables) {
+  if (array_key_exists('id', $variables['attributes']) && $variables['attributes']['id'] == 'main-menu-links') {
+      $pid = variable_get('menu_main_links_source', 'main-menu');
+    $tree = menu_tree($pid);
+    return drupal_render($tree);
+  }
+  return theme_links($variables);
+}
+
+
 /*
 function tb_sirate_file_icon($variables) {
   $file = $variables['file'];

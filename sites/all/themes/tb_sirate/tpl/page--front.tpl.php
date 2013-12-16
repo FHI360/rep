@@ -181,6 +181,19 @@
 
         <div class="<?php print nucleus_group_class("content, sidebar_first");?>">
           <div class="<?php print nucleus_group_class("content");?>">
+	     <!-- MAIN CONTENT -->
+            <div id="main-content" class="tb-main-box <?php print $content_width;?> section">
+              <div class="grid-inner clearfix">
+                <?php if ($tabs = render($tabs)): ?>
+                  <div class="tabs"><?php print $tabs; ?></div>
+                <?php endif; ?>
+
+                <?php if ($highlighted = render($page['highlighted'])): print $highlighted; endif; ?>
+
+              </div>
+            </div>
+            <!-- //MAIN CONTENT -->
+
             <!-- MASS BOTTOM -->  
             <?php if ($mass_bottom = render($page['mass_bottom'])): ?>  
               <div id="mass-bottom-wrapper" class="mass-bottom <?php print nucleus_group_class("content");?>">  

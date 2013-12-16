@@ -2,42 +2,42 @@
   Drupal.TBResponsive = Drupal.TBResponsive || {};
   Drupal.TBResponsive.supportedScreens = [0.5, 479.5, 719.5, 959.5, 1049.5];
   Drupal.TBResponsive.oldWindowWidth = 0;
-  Drupal.TBResponsive.updateResponsiveMenu = function(){
-    var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-    if(windowWidth < Drupal.TBResponsive.supportedScreens[3]){
-      $('.region-menu-bar').hide();
-      $('.responsive-menu-button').show();
-    }
-    else{
-      $('.responsive-menu-button').hide();
-      $('.region-menu-bar').show();
-    }
-  }
 
-  Drupal.TBResponsive.initResponsiveMenu = function(){
-    Drupal.TBResponsive.updateResponsiveMenu();
-    $('.tb-main-menu-button').bind('click',function(e){
-      var target = $('.region-menu-bar');
-      if(target.css('display') == 'none') {
-        window.scrollTo(0, 0);
-        target.css({display: 'block'});
-      }
-      else {
-        target.css({display: 'none'});
-      }
-    });
-  }
+  /**
+   * Adds toggle link.
+   * Toggles menu on small resolutions.
+   * Restores menu on window width increasing.
+   */
+  Drupal.behaviors.responsiveBartikCollapsibleMenu = {
+    attach: function (context, settings) {
 
-  Drupal.behaviors.actionTBResponsive = {
-    attach: function (context) {
-      Drupal.TBResponsive.initResponsiveMenu();
+      // We can keep menu collapsed up to width maxWidth.
+      var maxWidth = 445;
+
+      // Do nothing if menu is empty.
+      if ($('#main-menu-links a').length == 0) {
+        return;
+      }
+
+      // Append toggle link to the main menu.
+      $('nav#main-menu').append('<a href="#" id="menu-toggle">' + Drupal.t('Menu') + '</a>');
+
+      // Collapse/expand menu by click on link.
+      $('a#menu-toggle').click(function() {
+        $('#main-menu-links').slideToggle('fast');
+        return false;
+      });
+
+      // Restore visibility settings of menu on increasing of windows width over 445px.
+      // Media query works with width up to 460px. But I guess we should take into account some padding.
       $(window).resize(function(){
-        var windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-        if(windowWidth != Drupal.TBResponsive.oldWindowWidth){
-          Drupal.TBResponsive.updateResponsiveMenu();
-          Drupal.TBResponsive.oldWindowWidth = windowWidth;
+        var w = $(window).width();
+        // Remove all styles if window size more than maxWidth and menu is hidden.
+        if(w > maxWidth && $('#main-menu-links').is(':hidden')) {
+          $('#main-menu-links').removeAttr('style');
         }
       });
     }
-  };
+  }
 })(jQuery);
+

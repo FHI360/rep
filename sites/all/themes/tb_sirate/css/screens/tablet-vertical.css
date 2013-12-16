@@ -329,7 +329,7 @@ body {
 }
 
 #panel-fourth-wrapper .views-field img {
-  width: 90% !important;
+  width: auto;
   height: auto;
   margin-bottom: 15px;
 }

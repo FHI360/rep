@@ -1,3 +1,14 @@
+.region-highlighted .block-inner {
+    margin: 20px 0 0 0;
+    padding: 0;
+    border: none;
+}
+
+.region-highlighted .block-inner .view-content {
+    margin: 0;
+    padding: 0;
+}
+
 .view-news-list .views-row {
     padding: 7px 3px;
     background: none;
@@ -27,16 +38,8 @@
     background-image: linear-gradient(to bottom, #E5F2FA 0%, #F1F8FC 100%);
 }
 
-.panel-fourth-3 {
-    display: none;
-}
-
 .grid-6 {
     width: 340px !important;
-}
-
-.grid-3 {
-    width: 575px !important;
 }
 
 #panel-fourth-wrapper .container {
@@ -48,14 +51,20 @@
 }
 
 .panel-fourth-1 {
-    padding: 0 1.5em 1.5em 1.5em;
+    padding: 0 0 2% 2%;
 }
 
 .panel-fourth-2 {
-    padding: 0 0 1.5em 0;
+    width: 0 !important;
 }
 
-.panel-fourth-1 .grid-inner, .panel-fourth-2 .grid-inner {
+.panel-fourth-3 {
+    padding: 0 2% 2% 0;
+    float: right;
+    width: 577px !important;
+}
+
+.panel-fourth-1 .grid-inner, .panel-fourth-3 .grid-inner {
     padding: 0 !important;
 }
 
@@ -351,7 +360,7 @@
     padding: 20px 14px 12px;
     margin-right: 16px;
     float: left;
-    width: 191px;
+    width: 192px;
     border: 1px solid;
     background: url('../images/panel-arrow.png') no-repeat right bottom;
 }
@@ -422,4 +431,137 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #d5d5d5;
+}
+
+@media screen and (max-width: 959px) and (min-width: 460px) {
+    .view-front-page-panels .views-row {
+        margin-bottom: 25px;
+        padding: 20px 2% 12px;
+        margin-right: 0;
+        width: 45%;
+        float: none;
+    }
+
+    .view-front-page-panels .views-row.views-row-odd {
+        float: left;
+    }
+
+    .view-front-page-panels .views-row.views-row-even {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 720px) {
+ 
+    #main-wrapper #main-content > .grid-inner {
+        padding: 0 20px;
+    }
+
+    .view-front-page-panels .views-field-field-title-styled {
+        font-size: 1.6em;
+        height: 3em;
+    }
+
+    .view-front-page-panels .views-field-body {
+        font-size: 1.4em;
+        height: 90px;
+    }
+
+    #panel-fourth-wrapper .panel-cols-3 .panel-column {
+        width:34.5% !important;
+    }
+
+    #panel-fourth-wrapper .panel-cols-3 .panel-fourth-2 {
+        width: 1% !important;
+    }
+
+    #panel-fourth-wrapper .panel-cols-3 .panel-column-3, #panel-fourth-wrapper .panel-cols-3 .panel-column-last {
+        width: 60% !important;
+        border-top: none;
+    }
+
+    #block-views-sms-tips-block--2 h2 {
+        background: none;
+        text-indent: 0;
+        font-size: 13px;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips {
+        margin-left: 0;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips .views-field-title, #block-views-sms-tips-block--2 .view-sms-tips .views-field-body {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 719px) and (min-width: 460px) {
+    .view-front-page-panels .views-field-field-title-styled {
+        font-size: 1.4em;
+        height: 3em;
+    }
+
+    .view-front-page-panels .views-field-body {
+        font-size: 1.2em;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .view-front-page-panels .views-row {
+        margin-bottom: 25px;
+        padding: 20px 2% 12px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 95.4%;
+        float: none;
+    }
+
+      #block-views-sms-tips-block--2 h2 {
+        background: none;
+        text-indent: 0;
+        font-size: 13px;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips {
+        margin-left: 0;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips .views-field-title, #block-views-sms-tips-block--2 .view-sms-tips .views-field-body {
+        font-size: 14px;
+    }
+
+    #footer {
+        padding: 1em 1.5em 1.8em 1.5em;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    #panel-fourth-wrapper .grid-inner {
+        border-top: none;
+    }
+ 
+    .panel-fourth-1, .panel-fourth-3 {
+        padding: 0 1.5% 2% !important;
+    }
+
+    .panel-fourth-2 {
+        height: 0;
+        padding-bottom: 0;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips .view-footer {
+        bottom: -20px;
+    }
+
+    #block-views-sms-tips-block--2 .view-sms-tips {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #block-views-sms-tips-block--2 {
+        height: auto;
+    }
+    
 }

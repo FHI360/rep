@@ -259,7 +259,7 @@ ul.pager li span {
 
 /**
  * Panels & Views
- */
+*/
 .cols-1 .views-col,
 .panel-cols-1 .panel-column,
 .cols-2 .views-col,
@@ -268,8 +268,9 @@ ul.pager li span {
 .panel-cols-2 .panel-column,
 .panel-cols-3 .panel-column,
 .panel-cols-4 .panel-column {
-  width: 100% !important;
+  width: 97% !important;
 }
+
 
 .views-field img {
   height: auto;
